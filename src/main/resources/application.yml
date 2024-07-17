@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: test-email
+
+
+  profiles:
+    active: dev
+  mail:
+    host: smtp-mail.outlook.com
+    port: 587
+    username: ... #Replace this field with your Outlook username.
+    password: ...               #Replace this field with your Outlook password.
+    protocol: smtp
+    tls: true
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+      ssl.trust: smtp-mail.outlook.com
